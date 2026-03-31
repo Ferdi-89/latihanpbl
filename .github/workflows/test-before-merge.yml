@@ -1,10 +1,9 @@
-name: test lint HTML
+name: Automasi Testing Sebelum Merge
 
 on:
   pull_request:
     branches:
       - main
-      - tempo
 
 jobs:
   test:
