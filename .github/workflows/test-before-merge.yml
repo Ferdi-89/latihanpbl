@@ -1,13 +1,11 @@
-name: Automasi Testing Sebelum Merge
 
-on:
   pull_request:
     branches:
       - main
 
 jobs:
   test:
-    runs-on: windows-latest
+    runs-on: windows-latest .github/workflows/test-before-merge.yml |  2 +-
 
     steps:
       - name: Checkout Repository
@@ -20,5 +18,5 @@ jobs:
       - name: Periksa HTML
         run: htmlhint "**/*.html"
 
-      - name: Periksa CSSs
+      - name: Periksa CSS
         run: stylelint "**/*.css"
