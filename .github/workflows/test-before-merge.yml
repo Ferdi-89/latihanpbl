@@ -20,3 +20,7 @@ jobs:
 
       - name: Periksa CSS
         run: stylelint "**/*.css"
+      
+      - name: Install HTMLHint & Stylelint
+        run: |
+          npm install -g htmlhint stylelint stylelint-config-standard
