@@ -20,5 +20,5 @@ jobs:
       - name: Periksa HTML
         run: htmlhint "**/*.html"
 
-      - name: Periksa CSS
+      - name: Periksa CSSs
         run: stylelint "**/*.css"
